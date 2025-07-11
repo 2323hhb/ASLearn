@@ -1,6 +1,8 @@
-package com.apex.aslearn;
+package com.apex.aslearn.activity;
 
 import android.os.Bundle;
+
+import com.apex.aslearn.R;
 
 public class SecondActivity extends BaseActivity {
 

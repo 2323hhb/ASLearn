@@ -1,4 +1,4 @@
-package com.apex.aslearn;
+package com.apex.aslearn.activity;
 
 import android.os.Bundle;
 import android.util.Log;

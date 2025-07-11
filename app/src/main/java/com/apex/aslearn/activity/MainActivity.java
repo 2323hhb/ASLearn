@@ -1,13 +1,12 @@
-package com.apex.aslearn;
+package com.apex.aslearn.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.appcompat.widget.Toolbar;
+import com.apex.aslearn.R;
 
 
 public class MainActivity extends BaseActivity {

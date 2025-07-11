@@ -1,4 +1,4 @@
-package com.apex.aslearn;
+package com.apex.aslearn.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+
+import com.apex.aslearn.R;
 
 public class ThirdActivity extends BaseActivity implements View.OnClickListener{
 

@@ -13,10 +13,10 @@
         tools:ignore="AppLinkUrlError"
         tools:targetApi="31">
         <activity
-            android:name=".ForthActivity"
+            android:name=".activity.ForthActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,11 +24,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SecondActivity"
+            android:name=".activity.SecondActivity"
             android:exported="false">
         </activity>
         <activity
-            android:name=".ThirdActivity"
+            android:name=".activity.ThirdActivity"
             android:exported="false">
             <!--            <intent-filter>-->
             <!--                <action android:name="android.intent.action.VIEW" />-->
