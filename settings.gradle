@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ASLearn"
 include ':app'
+include ':broadcastforceoffline'

@@ -32,6 +32,7 @@ public class MainActivity extends BaseActivity {
         //R表示资源Resources，这里是引入布局
         setContentView(R.layout.activity_main);
         intentFilter = new IntentFilter();
+        //add action为添加广播接收器想要接收什么样的信息
         intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         networkChangeReceiver = new NetworkChangeReceiver();
         registerReceiver(networkChangeReceiver,intentFilter);
