@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true">
+    <!-- 设置fitsSystemWindows=true来让组件适应窗口布局 -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,6 +51,25 @@
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:inputType="textPassword"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remember_pass"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/remember_password"/>
 
 
     </LinearLayout>

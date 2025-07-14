@@ -30,9 +30,10 @@ public class BaseActivity extends AppCompatActivity {
     @SuppressLint("UnspecifiedRegisterReceiverFlag")
     @Override
     protected void onResume() {
-        //当活动失去栈顶位置就会取消注册
+        //当活动失去栈顶位置就会取消注册，非栈顶活动没必要去接收这个广播，所以不在onCreat里面注册
         super.onResume();
         IntentFilter intentFilter = new IntentFilter();
+        //添加想要接收的广播
         intentFilter.addAction("com.apex.broadcastforceoffline.FORCE_OFFLINE");
         receiver = new ForceOfflineReceiver();
         registerReceiver(receiver,intentFilter);
@@ -60,8 +61,11 @@ public class BaseActivity extends AppCompatActivity {
         public void onReceive(Context context, Intent intent) {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setTitle("Warning");
-            builder.setMessage("You are forced to be offline. Please try to login again");
+            builder.setMessage("You are forced to be offline. Please try to login again！");
             builder.setCancelable(false);//防止用户关闭对话框继续使用程序
+            //BroadcastReceiver并非Activity的子类，在onReceive方法里，
+            // 并没有直接可用的startActivity方法。
+            // 所以，必须借助传入的Context对象来调用此方法。
             builder.setPositiveButton("OK", (dialog, which) -> {
                 ActivityCollector.finishAll();
                 Intent i = new Intent(context, LoginActivity.class);
