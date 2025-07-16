@@ -8,11 +8,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ASLearn">
+        <provider
+            android:name="com.apex.databasetest.DatabaseProvider"
+            android:authorities="com.apex.databasetest.provider"
+            android:enabled="true"
+            android:exported="true">
+        </provider>
         <activity
             android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

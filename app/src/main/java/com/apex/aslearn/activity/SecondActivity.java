@@ -42,6 +42,7 @@ public class SecondActivity extends BaseActivity {
         msgAdapter = new MsgAdapter(msgList);
         msgRecyclerView.setAdapter(msgAdapter);
         send.setOnClickListener(v -> {
+            //获取输入信息
             String content = inputText.getText().toString();
             if (!"".equals(content)){
                 Msg msg = new Msg(content,Msg.TYPE_SEND);

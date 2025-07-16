@@ -12,7 +12,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/broadcastforceoffline" />
+            <option value="$PROJECT_DIR$/contactstest" />
             <option value="$PROJECT_DIR$/databasetest" />
+            <option value="$PROJECT_DIR$/litepaltest" />
+            <option value="$PROJECT_DIR$/notificationtest" />
+            <option value="$PROJECT_DIR$/providertest" />
+            <option value="$PROJECT_DIR$/runtimepermissiontest" />
             <option value="$PROJECT_DIR$/sharepreferencestest" />
           </set>
         </option>
